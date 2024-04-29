@@ -1,7 +1,5 @@
-:root {
-    --background-color-footer: #D9D9D9;
-    --text-color: #000000;
-    font-size: 62.5%;
+.Footer{
+    padding-top: 38px;
 }
 
 .Footer__wrapper {
@@ -20,11 +18,9 @@
 .List-first__item{
     margin-top: 7px;
 }
-.List-main__link,
-.List-first__link {
-    color: var(--text-color);
-}
+
 .List-main__link{
+    color: var(--text-color);
     font-family: Inter;
     font-size: 2rem;
     font-weight: 500;
@@ -32,6 +28,7 @@
     text-align: left;
 }
 .List-first__link {
+    color: var(--text-color);
     font-family: Inter;
     font-size: 1.6rem;
     font-weight: 400;

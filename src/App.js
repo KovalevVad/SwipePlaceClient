@@ -8,7 +8,7 @@ function App() {
     return (
         <div className="appWrapper">
             {/* <Header /> */}
-            {/* <Main /> */}
+            <Main />
             <Footer />
         </div>
     );

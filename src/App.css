@@ -87,3 +87,10 @@ label {
 legend {
 	display: block;
 }
+
+:root {
+    --background-color-footer: #D9D9D9;
+	--background-color-community: #D9D9D9;
+    --text-color: #000000;
+    font-size: 62.5%;
+}
