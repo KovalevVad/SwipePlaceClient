@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #d9d9d9;
+}
+
+.header__nav-ul {
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+  padding: 0;
+}
+
+header > nav {
+  margin-left: 165px;
+}
+
+.logo {
+  margin-left: 64px;
+}
+
+.header__button {
+  margin: 0px 64px 0px 64px;
+}
+
+.header__button {
+  width: 100px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #ffffff;
+}
