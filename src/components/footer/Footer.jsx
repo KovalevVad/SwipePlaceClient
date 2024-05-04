@@ -16,21 +16,21 @@ const Footer = () => {
         { text: 'Новости', href: '/' }
     ];
 
-    const renderLink = (link, index) => (
-        <li key={index} className='List-main__item'>
-            <a className='List-main__link' href={link.href}>{link.text}</a>
+    const renderLink = (link, index, className) => (
+        <li key={index} className={`${className}__item`}>
+            <a className={`${className}__link`} href={link.href}>{link.text}</a>
         </li>
     );
-
+    
     return (
         <footer className='Footer'>
             <div className='Footer__wrapper'>
                 <nav className='Footer__navigation Navigation'>
                     <ul className='Navigation__list-main List-main'>
-                        {mainLinks.map((link, index) => renderLink(link, index))}
+                        {mainLinks.map((link, index) => renderLink(link, index, 'List-main'))}
                     </ul>
                     <ul className='Navigation__list-first List-first'>
-                        {firstLinks.map((link, index) => renderLink(link, index))}
+                        {firstLinks.map((link, index) => renderLink(link, index, 'List-first'))}
                     </ul>
                 </nav>
             </div>
