@@ -1,7 +1,7 @@
 import React from 'react';
 import './Main.css';
-import TelegramIcon from '../../Image/Telegram.svg';
-import TouristImg from '../../Image/Tourist.jpeg';
+import TelegramIcon from '../../img/Telegram.svg';
+import TouristImg from '../../img/Tourist.jpeg';
 
 const Community = () => {
     return (

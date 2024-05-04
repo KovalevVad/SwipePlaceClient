@@ -1,4 +1,4 @@
-.Footer{
+.Footer {
     padding-top: 38px;
 }
 
@@ -7,7 +7,7 @@
     padding: 72px 81px 90px 84px;
 }
 
-.Navigation__list-main{
+.Navigation__list-main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -15,21 +15,22 @@
     margin-bottom: 13px;
 }
 
-.List-first__item{
+.List-first__item {
     margin-top: 7px;
 }
 
-.List-main__link{
+.List-main__link {
     color: var(--text-color);
-    font-family: Inter;
+    font-family: var(--font-family);
     font-size: 2rem;
     font-weight: 500;
     line-height: 24px;
     text-align: left;
 }
+
 .List-first__link {
     color: var(--text-color);
-    font-family: Inter;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 21px;

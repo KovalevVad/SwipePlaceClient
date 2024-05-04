@@ -1,8 +1,8 @@
 import React from 'react';
 import './Main.css';
-import Moskow from '../../Image/Card_Moskow.jpg';
-import Barselona from '../../Image/Card_Barselona.jpg';
-import Paris from '../../Image/Card_Paris.jpg';
+import Moskow from '../../img/Card_Moskow.jpg';
+import Barselona from '../../img/Barselona.jpg';
+import Paris from '../../img/Card_Paris.jpg';
 
 
 const Cards = () => {

@@ -3,7 +3,7 @@
 }
 
 .Community__wrapper {
-    background-image: url(../../Image/Icons.png);
+    background-image: url(../../img/Icons.png);
     padding: 106px 140px 42px 150px;
     display: grid;
     grid-template-columns: auto auto;
