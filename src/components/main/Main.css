@@ -1,0 +1,55 @@
+.Community {
+    background-color: var(--background-color-community);
+}
+
+.Community__wrapper {
+    background-image: url(../../img/Icons.png);
+    padding: 106px 140px 42px 150px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.Community__title {
+    color: var(--text-color);
+    font-family: Inter;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+}
+
+.Community__description {
+    color: var(--text-color);
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    max-width: 250px;
+}
+
+.Community__tg-link {
+    color: var(--text-color);
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+}
+
+.Community__block-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 430px;
+    margin-top: 30px;
+}
+.Community__tg-block{
+    text-align: center;
+}
+.Community__image{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
