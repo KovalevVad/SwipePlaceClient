@@ -53,3 +53,43 @@
     grid-column: 2/3;
     grid-row: 1/2;
 }
+
+
+/* CARDS */
+.Cards{
+    background-color: #F2F0EF;
+}
+
+.Cards__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    padding: 70px 150px;
+}
+
+.Cards__list__elem{
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+
+}
+
+.Cards__list__elem-img{
+    max-width: 320px;
+}
+
+.Cards__list__elem-text{
+    max-height: 218px;
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+
+}
+
+.Cards__list__elem-bold_text{
+    font-weight: 900;
+}
