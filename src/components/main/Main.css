@@ -215,32 +215,38 @@ section>div{
 
     &[data-pos="-1"],
     &[data-pos="1"] {
+        cursor: pointer;
         opacity: 0.7;
         filter: blur(1px) grayscale(10%);
     }
 
     &[data-pos="-1"] {
+        cursor: pointer;
         transform: translateX(-40%) scale(.9);
         z-index: 4;
     }
 
     &[data-pos="1"] {
+        cursor: pointer;
         transform: translateX(40%) scale(.9);
         z-index: 4;
     }
 
     &[data-pos="-2"],
     &[data-pos="2"] {
+        cursor: pointer;
         opacity: 0.4;
         filter: blur(3px) grayscale(20%);
     }
 
     &[data-pos="-2"] {
+        cursor: pointer;
         transform: translateX(-70%) scale(.8);
         z-index: 3;
     }
 
     &[data-pos="2"] {
+        cursor: pointer;
         transform: translateX(70%) scale(.8);
         z-index: 3;
     }

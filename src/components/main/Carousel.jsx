@@ -1,14 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Main.css';
 
 const Carousel = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+
     useEffect(() => {
         const carouselList = document.querySelector('.carousel__list');
         const carouselItems = document.querySelectorAll('.carousel__item');
         const elems = Array.from(carouselItems);
 
-        const update = function(newActive) {
-            const newActivePos = newActive.dataset.pos;
+        const update = function(newActiveIndex) {
+            const newActivePos = elems[newActiveIndex].dataset.pos;
 
             const current = elems.find((elem) => elem.dataset.pos == 0);
             const prev = elems.find((elem) => elem.dataset.pos == -1);
@@ -23,6 +25,8 @@ const Carousel = () => {
 
                 item.dataset.pos = getPos(itemPos, newActivePos);
             });
+
+            setActiveIndex(newActiveIndex);
         };
 
         const getPos = function (current, active) {
@@ -43,26 +47,36 @@ const Carousel = () => {
                 return;
             }
             
-            update(newActive);
+            const newIndex = elems.findIndex(elem => elem === newActive);
+            update(newIndex);
         };
+
+        const interval = setInterval(() => {
+            let newIndex = activeIndex + 1;
+            if (newIndex === elems.length) {
+                newIndex = 0;
+            }
+            update(newIndex);
+        }, 2000);
 
         carouselList.addEventListener('click', handleClick);
 
         return () => {
+            clearInterval(interval);
             carouselList.removeEventListener('click', handleClick);
         };
-    }, []);
+    }, [activeIndex]);
 
     return (
         <section className='Carousel'>
             <div className='Carousel__wrapper'>
                 <div className="carousel">
                     <ul className="carousel__list">
-                        <li className="carousel__item" data-pos="-2">1</li>
-                        <li className="carousel__item" data-pos="-1">2</li>
-                        <li className="carousel__item" data-pos="0">3</li>
-                        <li className="carousel__item" data-pos="1">4</li>
-                        <li className="carousel__item" data-pos="2">5</li>
+                        <li className="carousel__item" data-pos="-1">1</li>
+                        <li className="carousel__item" data-pos="0">2</li>
+                        <li className="carousel__item" data-pos="1">3</li>
+                        <li className="carousel__item" data-pos="2">4</li>
+                        <li className="carousel__item" data-pos="-2">5</li>
                     </ul>
                 </div>
             </div>
