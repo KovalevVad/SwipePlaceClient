@@ -257,9 +257,9 @@ section>div{
 .registration-box {
     min-width: 1440px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-image: url(../../img/Registration-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Список */

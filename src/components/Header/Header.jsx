@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "./Header.css";
 import LOGO from "../../img/LOGO.svg";
 
 const list = ["Лента", "Мессенджер", "Избранное", "Личный кабинет", "Выбор валюты", 'Зарегистрироваться'];
