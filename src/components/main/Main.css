@@ -1,4 +1,10 @@
 /* Community */
+
+section>div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 .Community {
     background-color: var(--background-color-community);
 }
@@ -79,7 +85,7 @@
     display: flex;
     flex-direction: column;
     max-width: 320px;
-
+    
 }
 
 .Cards__list__elem-img {
@@ -94,7 +100,7 @@
     font-weight: 300;
     text-align: left;
     margin: 20px;
-
+    
 }
 
 .Cards__list__elem-bold_text {
@@ -136,9 +142,7 @@
 
 /* SLIDER */
 .Carousel {
-    background-image: url(../../img/Slider_background.jpeg);
-    padding-bottom: 27px;
-    background-repeat: no-repeat;
+    margin: 0 auto; 
 }
 
 .Carousel__wrapper {
@@ -147,6 +151,9 @@
     align-items: center;
     justify-content: center;
     min-height: 574px;
+    background-image: url(../../img/Slider_background.jpeg);
+    padding-bottom: 27px;
+    background-position: center;
 }
 
 .carousel__list {
