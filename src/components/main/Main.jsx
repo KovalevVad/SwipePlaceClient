@@ -6,8 +6,8 @@ import Cards from './Cards';
 const Main = () => {
     return (
         <main>
-            <Community />
-            <Cards />
+            <Cards/>
+            <Community/>
         </main>
     )
 }

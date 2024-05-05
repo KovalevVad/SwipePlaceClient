@@ -10,6 +10,12 @@
 *::after {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Cy Grotesk Key";
+  src: url("./fonts/CyGrotesk-KeyLight.woff2") format("woff2");
+  font-style: thin;
+  font-weight: 300;
+}
 
 @font-face {
   font-family: "Cy Grotesk Key";
@@ -23,6 +29,13 @@
   src: url("./fonts/CyGrotesk-KeyMedium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
+}
+
+@font-face {
+  font-family: "Cy Grotesk Key";
+  src: url("./fonts/CyGrotesk-KeyBold.woff2") format("woff2");
+  font-style: bold;
+  font-weight: 700;
 }
 
 :root {
