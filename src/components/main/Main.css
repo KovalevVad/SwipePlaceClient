@@ -1,4 +1,3 @@
-
 /* Community */
 .Community {
     background-color: var(--background-color-community);
@@ -40,7 +39,7 @@
     text-align: center;
 }
 
-.Community__block-wrapper{
+.Community__block-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -48,10 +47,12 @@
     max-width: 430px;
     margin-top: 30px;
 }
-.Community__tg-block{
+
+.Community__tg-block {
     text-align: center;
 }
-.Community__image{
+
+.Community__image {
     grid-column: 2/3;
     grid-row: 1/2;
     border-radius: 15px;
@@ -59,11 +60,11 @@
 
 
 /* CARDS */
-.Cards{
+.Cards {
     background-color: var(--background-color-cards);
 }
 
-.Cards__list{
+.Cards__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,7 +73,7 @@
     padding: 70px 150px;
 }
 
-.Cards__list__elem{
+.Cards__list__elem {
     border-radius: 20px;
     background-color: var(--background-color-cards-item);
     display: flex;
@@ -81,12 +82,12 @@
 
 }
 
-.Cards__list__elem-img{
+.Cards__list__elem-img {
     max-width: 320px;
     border-radius: 20px 20px 0 0;
 }
 
-.Cards__list__elem-text{
+.Cards__list__elem-text {
     font-family: var(--font-family);
     max-height: 218px;
     font-size: 2rem;
@@ -96,24 +97,24 @@
 
 }
 
-.Cards__list__elem-bold_text{
+.Cards__list__elem-bold_text {
     font-family: var(--font-family);
     font-weight: 700;
     text-wrap: wrap;
 }
 
-.Card__list__elem-dash{
+.Card__list__elem-dash {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 2rem;
 }
 
-.Cards__wrapper{
+.Cards__wrapper {
     position: relative;
     z-index: 0;
 }
 
-.Cards__popular{
+.Cards__popular {
     position: absolute;
     z-index: 1;
     left: 113px;
@@ -131,4 +132,109 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* SLIDER */
+.Carousel {
+    background-image: url(../../img/Slider_background.jpeg);
+    padding-bottom: 27px;
+    background-repeat: no-repeat;
+}
+
+.Carousel__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 574px;
+}
+
+.carousel__list {
+    display: flex;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 457px;
+    justify-content: center;
+    perspective: 300px;
+}
+
+.carousel__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0rem;
+    width: 303px;
+    height: 454px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+    position: absolute;
+    transition: all .3s ease-in;
+
+    &:nth-child(1) {
+        background: url(../../img/Slider_1.jpeg) no-repeat;
+        background-size: contain;
+        border-radius: 20px;
+    }
+
+    &:nth-child(2) {
+        background: url(../../img/Slider_2.jpeg) no-repeat;
+        background-size: contain;
+        border-radius: 24px;
+    }
+
+    &:nth-child(3) {
+        background: url(../../img/Slider_3.jpeg) no-repeat;
+        background-size: contain;
+        border-radius: 34px;
+    }
+
+    &:nth-child(4) {
+        background: url(../../img/Slider_4.jpeg) no-repeat;
+        background-size: contain;
+        border-radius: 24px;
+    }
+
+    &:nth-child(5) {
+        background: url(../../img/Slider_5.jpeg) no-repeat;
+        background-size: contain;
+        border-radius: 34px;
+    }
+
+    &[data-pos="0"] {
+        z-index: 5;
+    }
+
+    &[data-pos="-1"],
+    &[data-pos="1"] {
+        opacity: 0.7;
+        filter: blur(1px) grayscale(10%);
+    }
+
+    &[data-pos="-1"] {
+        transform: translateX(-40%) scale(.9);
+        z-index: 4;
+    }
+
+    &[data-pos="1"] {
+        transform: translateX(40%) scale(.9);
+        z-index: 4;
+    }
+
+    &[data-pos="-2"],
+    &[data-pos="2"] {
+        opacity: 0.4;
+        filter: blur(3px) grayscale(20%);
+    }
+
+    &[data-pos="-2"] {
+        transform: translateX(-70%) scale(.8);
+        z-index: 3;
+    }
+
+    &[data-pos="2"] {
+        transform: translateX(70%) scale(.8);
+        z-index: 3;
+    }
 }
