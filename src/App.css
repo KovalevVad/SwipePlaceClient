@@ -41,9 +41,11 @@
 :root {
   --background-color-footer: #d9d9d9;
   --background-color-community: #d9d9d9;
+  --background-color-cards: #F2F0EF;
+  --background-color-cards-item: white;
   --text-color: #000000;
   font-size: 62.5%;
-  --font-family: "Cy Grotesk Key";
+  --font-family: "Cy Grotesk Key",sans-serif;
 }
 
 /* Links */

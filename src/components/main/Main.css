@@ -1,3 +1,5 @@
+
+/* Community */
 .Community {
     background-color: var(--background-color-community);
 }
@@ -52,12 +54,13 @@
 .Community__image{
     grid-column: 2/3;
     grid-row: 1/2;
+    border-radius: 15px;
 }
 
 
 /* CARDS */
 .Cards{
-    background-color: #F2F0EF;
+    background-color: var(--background-color-cards);
 }
 
 .Cards__list{
@@ -71,7 +74,7 @@
 
 .Cards__list__elem{
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--background-color-cards-item);
     display: flex;
     flex-direction: column;
     max-width: 320px;
@@ -84,7 +87,7 @@
 }
 
 .Cards__list__elem-text{
-    font-family: var(--font-family),sans-serif;
+    font-family: var(--font-family);
     max-height: 218px;
     font-size: 2rem;
     font-weight: 300;
@@ -94,13 +97,13 @@
 }
 
 .Cards__list__elem-bold_text{
-    font-family: var(--font-family),sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
     text-wrap: wrap;
 }
 
 .Card__list__elem-dash{
-    font-family: var(--font-family),sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 2rem;
 }
@@ -115,7 +118,7 @@
     z-index: 1;
     left: 113px;
     top: 48px;
-    font-family: var(--font-family),sans-serif;
+    font-family: var(--font-family);
     font-weight: 300;
     font-size: 2rem;
     line-height: 2rem;

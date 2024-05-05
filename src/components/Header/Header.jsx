@@ -1,17 +1,23 @@
-import "./header.css";
+import React from "react";
+import "./Header.css";
 import LOGO from "../../img/LOGO.svg";
 
-const list = ["Лента", "Месенджер", "Избранное", "Личный кабинет", "Выбор валюты", 'Зарегистрироваться'];
+const list = ["Лента", "Мессенджер", "Избранное", "Личный кабинет", "Выбор валюты", 'Зарегистрироваться'];
+const urls = ["/", "/", "/", "/", "/", "/"];
 
 export default function Header() {
   return (
     <header>
-      <img src={LOGO} alt="LOGO" className="logo" />
+      <a href="/"><img src={LOGO} alt="LOGO" className="logo" /></a>
       <nav>
         <ul className="header__nav-ul">
           {
-            list.map((item) => {
-              return <li>{item}</li>
+            list.map((item, index) => {
+              return (
+                <li key={index}>
+                  <a href={urls[index]}>{item}</a>
+                </li>
+              );
             })
           }
         </ul>
