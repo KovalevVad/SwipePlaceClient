@@ -1,6 +1,5 @@
 import React from 'react';
 import './Main.css';
-import TelegramIcon from '../../img/Telegram.svg';
 import TouristImg from '../../img/Tourist.jpeg';
 
 const Community = () => {
@@ -9,17 +8,10 @@ const Community = () => {
             <div className='Community__wrapper'>
                 <div className="Community__block">
                     <h3 className='Community__title'>Путешествуй вместе с нами</h3>
-                    <div className="Community__block-wrapper">
-                        <p className='Community__description'>Делись, узнавай об интересных местах. Вступи в группу в телеграмме.</p>
-                        <figure className='Community__tg-block'>
-                            <img className='Community__tg-icon' src={TelegramIcon} alt="Телеграмм" />
-                            <figcaption>
-                                <a className='Community__tg-link' href="/">@link</a>
-                            </figcaption>
-                        </figure>
-                    </div>
+                    <p className='Community__description'>Делись, узнавай об интересных местах. Вступи в группу в телеграмме.</p>
                 </div>
                 <img className='Community__image' src={TouristImg} alt="Туристы" />
+                <p className='Community__background-text'>СДЕЛАЙ ШАГ</p>
             </div>
         </section>
     )

@@ -2,7 +2,7 @@ import React from 'react';
 import Community from './Community';
 import Cards from './Cards';
 import Carousel from './Carousel';
-import { Registration } from './Registration';
+import Registration from './Registration';
 
 const Main = () => {
     return (
