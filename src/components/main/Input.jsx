@@ -1,8 +1,21 @@
 import "./Search-section.css";
+import star10 from '../../img/Star 10.png'
+import star1 from '../../img/star-1.png'
+import icon31 from '../../img/icon3-1.png'
+import icon3 from '../../img/icon3.png'
+import star2 from '../../img/star2.png'
 
 export const Input = () => {
   return (
     <div className="box">
+      <div className="background-box">
+        <span><img className="star-10" alt="Звездочка" src={star10}></img></span>
+        <span><img className="star-1" alt="Звездочка" src={star1}></img></span>
+        <span><img className="icon31" alt="Иконка" src={icon31}></img></span>
+        <span><img className="icon3" alt="Иконка" src={icon3}></img></span>
+        <span><img className="star2" alt="Звездочка" src={star2}></img></span>
+      </div>
+      
       <div className="container">
         <div className="box-content">
           <div className="box__title">
@@ -11,9 +24,9 @@ export const Input = () => {
           <div className="box__cards">
             <div className="box__cards-text">
               {" "}
-              Свайпайте карточки и выбирайте <br /> интересные места <br /> для
+              <p>Свайпайте карточки и выбирайте <br /> интересные места <br /> для
               путешествий, а SwipePlace <br /> поможет составить идеальную{" "}
-              <br /> подборку специально для вас!
+              <br /> подборку специально для вас!</p>
             </div>
           </div>
           <form action="">
@@ -41,6 +54,10 @@ export const Input = () => {
               </button>
             </div>
           </form>
+          <div className="but-under-search">
+            <button className="button">Цены</button>
+            <button className="button">Рубрики</button>
+          </div>
         </div>
       </div>
     </div>

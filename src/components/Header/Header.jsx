@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import LOGO from "../../img/LOGO.svg";
+import LOGO from "../../img/logo-header.png";
 
 const list = ["Лента", "Мессенджер", "Избранное", "Личный кабинет", "Выбор валюты", 'Зарегистрироваться'];
 const urls = ["/", "/", "/", "/", "/", "/"];
