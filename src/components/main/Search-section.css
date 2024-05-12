@@ -1,3 +1,12 @@
+/* @font-face {
+    font-family: "Cy Grotesk Key";
+    src: url("./fonts/CyGrotesk-KeyBold.woff2") format("woff2");
+    font-style: bold;
+    font-weight: 700;
+  }
+   */
+
+
 header, .header {
     min-width: 1440px;
     height: 100px;
@@ -5,10 +14,14 @@ header, .header {
     margin-bottom: 30px;
 }
 
+.container {
+    margin-left: 70px;
+}
+
 .box {
     min-width: 1440px;
     height: 513px;
-    background-color: #D9D9D9;
+    background-color: #ADF439;
     margin-bottom: 38px;
 }
 
@@ -17,6 +30,8 @@ header, .header {
 }
 
 .box__title-text {
+    font-weight: bold;
+    font-size: 38px;
     padding-top: 80px;
     margin-bottom: 56px;
 }
@@ -34,16 +49,20 @@ header, .header {
     width: 914px;
     display: flex;
     justify-content: space-between;
-    border: 2px solid #4c4c4c;
     border-radius: 10px;
+    border: 2px solid #B2B2B2;
+    /* border-image: linear-gradient(to right, #4C4C4C, #B2B2B2);
+    border-image-slice: 1; */
     padding: 14px 18px;
+    background: linear-gradient(to right, #242231, #6F6997);
 }
 
+
 .box__submit,
-.box__search {
+.box-search {
     border: none;
-    background-color: #D9D9D9;
 }
+
 
 .box__search {
     font-size: 18px;
