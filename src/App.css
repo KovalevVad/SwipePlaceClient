@@ -53,6 +53,7 @@
 }
 
 :root {
+  --background-color-header: #97F101;
   --background-color-footer: #303030;
   --background-color-community: #d9d9d9;
   --background-color-cards: #F2F0EF;
