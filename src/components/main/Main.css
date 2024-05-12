@@ -1,8 +1,7 @@
-body{
+section>div{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1440px;
     margin: 0 auto;
 }
 /* Community */
