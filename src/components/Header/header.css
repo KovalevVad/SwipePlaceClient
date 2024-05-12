@@ -1,5 +1,3 @@
-
-
 header {
   display: flex;
   justify-content: space-between;
@@ -24,12 +22,13 @@ header {
   color: var(--background-color-header);
 }
 
-.header__button{
+.header__button {
   font-family: var(--third-family);
   font-weight: 250;
-  font-size: 1.6rem;
-  text-align: center;
+  font-size: 1.8rem;
   color: #2e2c40;
+  letter-spacing: 0.1px;
+  font-stretch: semi-condensed;
 }
 
 header > nav {
@@ -43,10 +42,10 @@ header > nav {
 .header__button {
   min-width: 128px;
   min-height: 38px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #d1ff83;
   color: #2e2c40;
   margin: 0px 64px 0px 64px;
   right: 0;
-  font-family: var(--third);
+  font-family: var(--third-family);
 }
