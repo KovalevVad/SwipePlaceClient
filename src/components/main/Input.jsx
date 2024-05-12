@@ -15,7 +15,6 @@ export const Input = () => {
         <span><img className="icon3" alt="Иконка" src={icon3}></img></span>
         <span><img className="star2" alt="Звездочка" src={star2}></img></span>
       </div>
-      
       <div className="container">
         <div className="box-content">
           <div className="box__title">
