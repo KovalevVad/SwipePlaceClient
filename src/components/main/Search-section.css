@@ -1,11 +1,7 @@
-/* @font-face {
-    font-family: "Cy Grotesk Key";
-    src: url("./fonts/CyGrotesk-KeyBold.woff2") format("woff2");
-    font-style: bold;
-    font-weight: 700;
-  }
-   */
-
+.flex {
+    display: flex;
+    justify-content: center;
+}
 
 header, .header {
     min-width: 1440px;
@@ -39,36 +35,13 @@ header, .header {
     user-select: none;
 }
 
-.star-10 {
-    margin-left: 690px;
-    margin-top: 169px;
-    width: 51px;
-    height: 51px;
-}
+.star-10 { margin-left: 690px; margin-top: 169px;}
+.star-1 {margin-left: 715px; top: -120px;}
+.icon31 {margin-left: 754px; margin-top: 280px;}
+.icon3 {margin-left: 1050px; margin-top: 300px;}
+.star2 {margin-left: 1100px;}
 
-.star-1 {
-    margin-left: 715px;
-    top: -120px;
-    
-}
-
-.icon31 {
-    margin-left: 754px;
-    margin-top: 280px;
-}
-
-.icon3 {
-    margin-left: 1050px;
-    margin-top: 300px;
-}
-
-.star2 {
-    margin-left: 1100px;
-}
-
-.box__title {
-    margin-top: 10px;
-}
+.box__title { margin-top: 10px;}
 
 .box__title-text {
     font-weight: bold;
@@ -83,7 +56,6 @@ header, .header {
     height: 198px;
     background-image: url(../../img/swipecardsbg.png);
     border-radius: 20px;
-    /* object-fit: cover; */
 }
 
 .search {
@@ -100,12 +72,10 @@ header, .header {
     background: linear-gradient(to right, #242231, #6F6997);
 }
 
-
 .box__submit,
 .box-search {
     border: none;
 }
-
 
 .box__search {
     font-size: 18px;
@@ -116,7 +86,6 @@ header, .header {
 .box__search:focus-visible {
     outline: none;
 }
-
 
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
@@ -129,7 +98,6 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-left: 27px;
     font-size: 19px;
 }
-
 
 .but-under-search {
     display: inline-flex;

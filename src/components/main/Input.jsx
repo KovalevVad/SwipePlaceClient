@@ -7,6 +7,7 @@ import star2 from '../../img/star2.png'
 
 export const Input = () => {
   return (
+
     <div className="box">
       <div className="background-box">
         <span><img className="star-10" alt="Звездочка" src={star10}></img></span>
@@ -15,7 +16,6 @@ export const Input = () => {
         <span><img className="icon3" alt="Иконка" src={icon3}></img></span>
         <span><img className="star2" alt="Звездочка" src={star2}></img></span>
       </div>
-      
       <div className="container">
         <div className="box-content">
           <div className="box__title">
@@ -25,8 +25,8 @@ export const Input = () => {
             <div className="box__cards-text">
               {" "}
               <p>Свайпайте карточки и выбирайте <br /> интересные места <br /> для
-              путешествий, а SwipePlace <br /> поможет составить идеальную{" "}
-              <br /> подборку специально для вас!</p>
+                путешествий, а SwipePlace <br /> поможет составить идеальную{" "}
+                <br /> подборку специально для вас!</p>
             </div>
           </div>
           <form action="">
