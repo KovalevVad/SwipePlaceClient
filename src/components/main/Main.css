@@ -56,7 +56,7 @@ body{
 
 /* CARDS */
 .Cards {
-    background-color: var(--background-color-cards);
+    background: linear-gradient(180deg, rgba(99,93,135,1) 0%, rgba(36,34,49,1) 45%);  
 }
 
 .Cards__list {
@@ -118,11 +118,11 @@ body{
     font-weight: 300;
     font-size: 2rem;
     line-height: 2rem;
-    letter-spacing: 0.3rem;
-    color: #fff;
+    letter-spacing: 0.2rem;
+    color: #242231;
     width: 200px;
     height: 50px;
-    background-color: #343434;
+    background-color:#ADF439;
     border-radius: 43px;
     display: flex;
     justify-content: center;
