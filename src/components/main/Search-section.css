@@ -30,9 +30,16 @@ header, .header {
     position: absolute;
 }
 
+.star-10, .star-1, .icon3, .icon31, .star2 {
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 
 .star-10 {
-    position: absolute;
     margin-left: 690px;
     margin-top: 169px;
     width: 51px;
@@ -40,26 +47,22 @@ header, .header {
 }
 
 .star-1 {
-    position: absolute;
     margin-left: 715px;
     top: -120px;
     
 }
 
 .icon31 {
-    position: absolute;
     margin-left: 754px;
     margin-top: 280px;
 }
 
 .icon3 {
-    position: absolute;
     margin-left: 1050px;
     margin-top: 300px;
 }
 
 .star2 {
-    position: absolute;
     margin-left: 1100px;
 }
 
