@@ -5,7 +5,7 @@ import icon31 from '../../img/icon3-1.png'
 import icon3 from '../../img/icon3.png'
 import star2 from '../../img/star2.png'
 
-export const Input = () => {
+const Input = () => {
   return (
     <div className="box">
       <div className="background-box">
@@ -62,3 +62,5 @@ export const Input = () => {
     </div>
   );
 };
+
+export default Input;
