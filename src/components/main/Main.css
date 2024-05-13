@@ -337,14 +337,12 @@
     font-weight: 300;
     line-height: 32px;
     border-radius: 10px;
+    align-content: center;
     text-align: center;
     position: absolute;
     bottom: 90px;
     left: 340px;
-    width: 390px;
-    height: 83px;
-    align-content: center;
-    margin-top: 17px;
+    padding: 25px 55px;
 }
 
 .Registration__background-text-up{
